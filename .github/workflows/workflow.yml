@@ -20,11 +20,11 @@ jobs:
       run: |
          sudo useradd -m Area69Lab && sudo adduser Area69Lab sudo && echo 'Area69Lab:Area69Lab' | sudo chpasswd
     - name: Set Git Configs & Secrets
-        run: |
-           git config --global user.email ${GitHubMail}
-           git config --global user.name ${GitHubName}
-           git config --global credential.helper store
-           echo "https://${GitHubName}:${{ secrets.GH_TOKEN }}@github.com" > ~/.git-credentials
+      run: |
+         git config --global user.email ${GitHubMail}
+         git config --global user.name ${GitHubName}
+         git config --global credential.helper store
+         echo "https://${GitHubName}:${{ secrets.GH_TOKEN }}@github.com" > ~/.git-credentials
       
       # To Install different Environment replace their commands. by default it Install 'Ubuntu'
       
