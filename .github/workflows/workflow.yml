@@ -62,10 +62,10 @@ jobs:
       run: |
            #sudo apt update && sudo apt install xfce4 && sudo chmod 777 /home/Area69Lab/
            #sudo bash -c 'echo "exec /etc/X11/Xsession /usr/bin/xfce4-session" > /etc/chrome-remote-desktop-session'
-           
-           
-           sudo add-apt-repository ppa:ubuntukylin-members/ukui -y && sudo apt update && sudo apt install ukui-desktop-environment
+           sudo apt update && sudo apt install ubuntu-mate-desktop -y
       
+           
+  
       
     - name: Installing Google Chrome Headless
       run: |
