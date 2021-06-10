@@ -67,6 +67,8 @@ jobs:
            sudo apt-get install -f
            sudo dpkg --configure -a
            sudo apt install kde-plasma-desktop
+           sudo apt-get update --fix-missing
+           sudo apt-get update
       
     - name: Installing Google Chrome Headless
       run: |
